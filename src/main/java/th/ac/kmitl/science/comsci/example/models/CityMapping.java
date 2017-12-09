@@ -5,59 +5,162 @@ import th.ac.kmitl.science.comsci.example.utilities.Mapping;
 public class CityMapping implements Mapping{
 
     @Override
-    public int map(String city) throws Exception{
+    public int getCode(String city) throws Exception{
+        int cityCode;
         switch(city){
-            case "Phra Nakhon"          : return 1001;
-            case "Dusit"                : return 1002;
-            case "Nong Chok"            : return 1003;
-            case "Bang Rak"             : return 1004;
-            case "Bang Khen"            : return 1005;
-            case "Bang Kapi"            : return 1006;
-            case "Pathum Wan"           : return 1007;
-            case "Pom Prap Sattru Phai" : return 1008;
-            case "Phra Khanong"         : return 1009;
-            case "Min Buri"             : return 1010;
-            case "Lat Krabang"          : return 1011;
-            case "Yan Nawa"             : return 1012;
-            case "Samphanthawong"       : return 1013;
-            case "Phaya Thai"           : return 1014;
-            case "Thon Buri"            : return 1015;
-            case "Bangkok Yai"          : return 1016;
-            case "Huai Khwang"          : return 1017;
-            case "Khlong San"           : return 1018;
-            case "Taling Chan"          : return 1019;
-            case "Bangkok Noi"          : return 1020;
-            case "Bang Khun Thian"      : return 1021;
-            case "Phasi Charoen"        : return 1022;
-            case "Nong Khaem"           : return 1023;
-            case "Rat Burana"           : return 1024;
-            case "Bang Phlat"           : return 1025;
-            case "Din Daeng"            : return 1026;
-            case "Bueng Kum"            : return 1027;
-            case "Sathon"               : return 1028;
-            case "Bang Sue"             : return 1029;
-            case "Chatuchak"            : return 1030;
-            case "Bang Kho Laem"        : return 1031;
-            case "Prawet"               : return 1032;
-            case "Khlong Toei"          : return 1033;
-            case "Suan Luang"           : return 1034;
-            case "Chom Thong"           : return 1035;
-            case "Don Mueang"           : return 1036;
-            case "Ratchathewi"          : return 1037;
-            case "Lat Phrao"            : return 1038;
-            case "Watthana"             : return 1039;
-            case "Bang Khae"            : return 1040;
-            case "Lak Si"               : return 1041;
-            case "Sai Mai"              : return 1042;
-            case "Khan Na Yao"          : return 1043;
-            case "Saphan Sung"          : return 1044;
-            case "Wang Thonglang"       : return 1045;
-            case "Khlong Sam Wa"        : return 1046;
-            case "Bang Na"              : return 1047;
-            case "Thawi Watthana"       : return 1048;
-            case "Thung Khru"           : return 1049;
-            case "Bang Bon"             : return 1050;
-            default : throw new Exception("Not Found City");
+            case "Phra Nakhon":
+                cityCode = 1001;
+                break;
+            case "Dusit":
+                cityCode = 1002;
+                break;
+            case "Nong Chok":
+                cityCode = 1003;
+                break;
+            case "Bang Rak":
+                cityCode = 1004;
+                break;
+            case "Bang Khen":
+                cityCode = 1005;
+                break;
+            case "Bang Kapi":
+                cityCode = 1006;
+                break;
+            case "Pathum Wan":
+                cityCode = 1007;
+                break;
+            case "Pom Prap Sattru Phai":
+                cityCode = 1008;
+                break;
+            case "Phra Khanong":
+                cityCode = 1009;
+                break;
+            case "Min Buri":
+                cityCode = 1010;
+                break;
+            case "Lat Krabang":
+                cityCode = 1011;
+                break;
+            case "Yan Nawa":
+                cityCode = 1012;
+                break;
+            case "Samphanthawong":
+                cityCode = 1013;
+                break;
+            case "Phaya Thai":
+                cityCode = 1014;
+                break;
+            case "Thon Buri":
+                cityCode = 1015;
+                break;
+            case "Bangkok Yai":
+                cityCode = 1016;
+                break;
+            case "Huai Khwang":
+                cityCode = 1017;
+                break;
+            case "Khlong San":
+                cityCode = 1018;
+                break;
+            case "Taling Chan":
+                cityCode = 1019;
+                break;
+            case "Bangkok Noi":
+                cityCode = 1020;
+                break;
+            case "Bang Khun Thian":
+                cityCode = 1021;
+                break;
+            case "Phasi Charoen":
+                cityCode = 1022;
+                break;
+            case "Nong Khaem":
+                cityCode = 1023;
+                break;
+            case "Rat Burana":
+                cityCode = 1024;
+                break;
+            case "Bang Phlat":
+                cityCode = 1025;
+                break;
+            case "Din Daeng":
+                cityCode = 1026;
+                break;
+            case "Bueng Kum":
+                cityCode = 1027;
+                break;
+            case "Sathon":
+                cityCode = 1028;
+                break;
+            case "Bang Sue":
+                cityCode = 1029;
+                break;
+            case "Chatuchak":
+                cityCode = 1030;
+                break;
+            case "Bang Kho Laem":
+                cityCode = 1031;
+                break;
+            case "Prawet":
+                cityCode = 1032;
+                break;
+            case "Khlong Toei":
+                cityCode = 1033;
+                break;
+            case "Suan Luang":
+                cityCode = 1034;
+                break;
+            case "Chom Thong":
+                cityCode = 1035;
+                break;
+            case "Don Mueang":
+                cityCode = 1036;
+                break;
+            case "Ratchathewi":
+                cityCode = 1037;
+                break;
+            case "Lat Phrao":
+                cityCode = 1038;
+                break;
+            case "Watthana":
+                cityCode = 1039;
+                break;
+            case "Bang Khae":
+                cityCode = 1040;
+                break;
+            case "Lak Si":
+                cityCode = 1041;
+                break;
+            case "Sai Mai":
+                cityCode = 1042;
+                break;
+            case "Khan Na Yao":
+                cityCode = 1043;
+                break;
+            case "Saphan Sung":
+                cityCode = 1044;
+                break;
+            case "Wang Thonglang":
+                cityCode = 1045;
+                break;
+            case "Khlong Sam Wa":
+                cityCode = 1046;
+                break;
+            case "Bang Na":
+                cityCode = 1047;
+                break;
+            case "Thawi Watthana":
+                cityCode = 1048;
+                break;
+            case "Thung Khru":
+                cityCode = 1049;
+                break;
+            case "Bang Bon":
+                cityCode = 1050;
+                break;
+            default:
+                throw new Exception("CityNotFoundException");
         }
+        return cityCode;
     }
 }

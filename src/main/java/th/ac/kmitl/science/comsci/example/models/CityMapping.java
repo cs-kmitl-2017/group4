@@ -1,11 +1,12 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+import th.ac.kmitl.science.comsci.example.exceptions.CityNotFoundException;
 import th.ac.kmitl.science.comsci.example.utilities.Mapping;
 
 public class CityMapping implements Mapping{
 
     @Override
-    public int getCode(String city) throws Exception{
+    public int getCode(String city) throws CityNotFoundException {
         int cityCode;
         switch(city){
             case "Phra Nakhon":
@@ -159,7 +160,7 @@ public class CityMapping implements Mapping{
                 cityCode = 1050;
                 break;
             default:
-                throw new Exception("CityNotFoundException");
+                throw new CityNotFoundException("City Not Found");
         }
         return cityCode;
     }
